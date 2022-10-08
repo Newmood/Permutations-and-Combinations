@@ -30,7 +30,7 @@
 \textbf{Addition Rule:} If an event can occur through a process m ways or with another process in n ways, then the total number of ways with which the event can occur is m+n. The processes here must be mutually exclusive.\newline
 \textbf{Multiplication Rule:} If an event can occur in m ways, and another event can occur in n ways, then total number of ways in which both event can occur simultaneously is m×n. Ensure while using this rule, that the events are independent.
 \end{tcolorbox}
-\textbf{NOTE:} See that, how the words `and', `or' are used while defining the rules. These rules can be extended for more events as well.\newline
+\textbf{NOTE:} See that, how the words `and', `or' are used while defining the rules. These rules can be extended for more events as well.
 
 \textbf{Example 1:} Suppose you can reach a certain destination A from your starting point, using 3 different trains or 2 different buses. What are the total number of ways by which you can reach A?
 
@@ -38,7 +38,8 @@
 
 \textbf{Example 2:} In continuation of the last example, suppose yo have to reach, another destination B from A, such that you can use 2 different trains or 4 different buses. What are the total number of ways you have in order to reach B from your starting destination?
 
-\textbf{Solution} In the last example, we have found that there are 5 ways to reach A, and now for moving from A to B we have 2+4 = 6 ways. Since, the mode of transport we use from A to B is independent of the mode of transport we use from starting destination to A, the total number of ways we have to reach B from our starting destination is 5 × 6 = 30 ways.\newline \newline 
+\textbf{Solution} In the last example, we have found that there are 5 ways to reach A, and now for moving from A to B we have 2+4 = 6 ways. Since, the mode of transport we use from A to B is independent of the mode of transport we use from starting destination to A, the total number of ways we have to reach B from our starting destination is 5 × 6 = 30 ways. \vspace{5mm}
+
 For moving further, we must be knowing some other basic concepts which will be listed as follows:
 \begin{itemize}
     \item \textbf{Factorial Notations:} If n is a positive integer, n factorial is defined by n! = 1×2×3×4....×n i.e. 2! = 1×2 and 3! = 1×2×3 , however there is a special case, 0! = 1.
@@ -55,7 +56,7 @@ For moving further, we must be knowing some other basic concepts which will be l
 \textbf{Solution} In the first place, we can place any 1 out of 7 books. So number of ways to fill first place is 7. For second place, we have 6 books remaining, so number of ways to fill second place is 6, and proceeding the same way, for the third place number of ways is 5. So the total number of ways: 7×6×5 = 210. (We will not do 7+6+5 here because we are asked to fill all the spaces simultaneously. We cannot fill any one of first or second or third place)\newline
 \textbf{Example 5:} Find the number of ways to arrange 7 different pens on 7 pen holders, each one containing only one pen.
 
-\textbf{Solution} Proceeding the same way as in example 4, for first place number of ways are 7, for second place it's 6, followed by 5,4,3,2,1 for third, fourth, fifth and sixth place. Hence answer will be = 7×6×5×4×3×2×1 = 7! = 5040 \newline
+\textbf{Solution} Proceeding the same way as in example 4, for first place number of ways are 7, for second place it's 6, followed by 5,4,3,2,1 for third, fourth, fifth and sixth place. Hence answer will be = 7×6×5×4×3×2×1 = 7! = 5040. 
 \begin{tcolorbox}[colback=TealBlue!10!White,colframe=TealBlue!50!black]
 \textbf{Arranging n-distinct objects}
 From examples 4 and 5, we can understand that n-different objects can be arranged in n! ways
@@ -65,8 +66,9 @@ From examples 4 and 5, we can understand that n-different objects can be arrange
 \begin{tcolorbox}[colback=TealBlue!10!White,colframe=TealBlue!50!black]
 We have the general formula, which states number of ways in which r objects can be selected out of n-distinct objects = $^{n}C_{r} = \frac{n!}{r!(n-r)!}$. This can also be stated as, combination of n objects taken r at a time. \newline
 Number of permutations of n different objects taken r at a time is given as $^nP_r$ = $^{n}C_{r}.(r!)$ = $\frac{n!}{(n-r)!}$
-\end{tcolorbox}[colback=TealBlue!10!White,colframe=TealBlue!50!black] 
-Here, we see that n and r are number of objects, so they have to be positive integers with $n \geq r$.\newline \newline
+\end{tcolorbox} 
+Here, we see that n and r are number of objects, so they have to be positive integers with $n \geq r$. \newline \vspace{1mm}
+
 \textbf{Explaining the formula for permutations and combinations}:
 Let us say, we have n objects but only r places and each place can accommodate only 1 object. This means, the first place can be filled in $n$ ways, the second in $n-1$ ways the third in $n-2$ ways and so on until the rth place which can be filled in $n-r+1$ ways. We have now, number of ways = $n(n-1)(n-2)....(n-r+1)$. In factorial notation, this can be expressed as $\frac{n!}{(n-r)!}$. This is the formula for number of permutations of n objects taken r at a time, and is denoted as $^nP_r$ or $_nP_r$. Note, that here we did place objects in different spaces available right from the first place, that is, it is ordered arrangement. When order is immaterial, it is referred to as combination which is denoted as $^nC_r$ or $_nC_r$ and can be given as $^nC_r$ = $\frac{n!}{(n-r)! r!}$. \newline The following examples will help in understanding the difference between a permutation and a combination.\newline
 \textbf{Example 6:} In how many ways can we select 3 objects out of 7 different objects?
@@ -88,7 +90,7 @@ Till now, we have discussed about linear permutations. Now, we talk about arrang
     \includegraphics[width=7cm]{PnCcircularpermu.jpg}
     \caption{The left one shows ABC(clockwise), right one shows CAB(clockwise)}
     \label{fig:my_label}
-\end{figure} \newline
+\end{figure} 
 Now we think of $N$ such objects to be placed in $N$ place where each place accommodates only one object (circular permutation). Let us now call them object $A_{1}$, $A_{2}$, $A_3$ ...$A_n$. Once we fix any of these, say $A_1$ in the next position (in clockwise direction) $n-1$ objects can be placed, followed by $n-2$ objects for the next place and so on until there is just one last position remaining completing the circle. From the above discussion we get that total number of such permutations will be $(n-1)(n-2)(n-3)(n-4)$...$1$ = $(n-1)!$ 
 \begin{tcolorbox}[colback=TealBlue!10!White,colframe=TealBlue!50!black]
 The total number of circular permutations of n-objects is $(n-1)!$.
@@ -132,6 +134,8 @@ Suppose we name the two $T$'s as $T_1$ and $T_2$ which gives $11!$ permutations 
 \begin{center}
  Hence, required answer = (number of all possible arrangements) $-$ (number of arrangements where all $S$ are together) \newline = $\frac{11!}{4!4!2!}$ $-$ $\frac{8!}{4!2!}$
 \end{center}
+
+
 
    
   
