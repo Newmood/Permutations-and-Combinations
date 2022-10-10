@@ -48,13 +48,13 @@ For moving further, we must be knowing some other basic concepts which will be l
 
 \newpage
 \subsection{Some examples based on fundamental rules}
-\textbf{Example 3:} If a coin is tossed twice, find total number of outcomes.
+\textcolor{blue}{\textbf{Example 3:} If a coin is tossed twice, find total number of outcomes.}
 
 \textbf{Solution} Tossing of a coin can either result in a head of a tail, giving two outcomes for each toss. If it is tossed twice, it can give a total of 2×2 = 4 outcomes. To understand this we can list out the outcomes as {(H,T),(H,H),(T,H),(T,T)}.\newline
-\textbf{Example 4:} Find the number of ways in which three out 7 different books can be placed on a shelf.
+\textcolor{blue}{\textbf{Example 4:} Find the number of ways in which three out 7 different books can be placed on a shelf.}
 
 \textbf{Solution} In the first place, we can place any 1 out of 7 books. So number of ways to fill first place is 7. For second place, we have 6 books remaining, so number of ways to fill second place is 6, and proceeding the same way, for the third place number of ways is 5. So the total number of ways: 7×6×5 = 210. (We will not do 7+6+5 here because we are asked to fill all the spaces simultaneously. We cannot fill any one of first or second or third place)\newline
-\textbf{Example 5:} Find the number of ways to arrange 7 different pens on 7 pen holders, each one containing only one pen.
+\textcolor{blue}{\textbf{Example 5:} Find the number of ways to arrange 7 different pens on 7 pen holders, each one containing only one pen.}
 
 \textbf{Solution} Proceeding the same way as in example 4, for first place number of ways are 7, for second place it's 6, followed by 5,4,3,2,1 for third, fourth, fifth and sixth place. Hence answer will be = 7×6×5×4×3×2×1 = 7! = 5040. 
 \begin{tcolorbox}[colback=TealBlue!10!White,colframe=TealBlue!50!black]
@@ -71,16 +71,16 @@ Here, we see that n and r are number of objects, so they have to be positive int
 
 \textbf{Explaining the formula for permutations and combinations}:
 Let us say, we have n objects but only r places and each place can accommodate only 1 object. This means, the first place can be filled in $n$ ways, the second in $n-1$ ways the third in $n-2$ ways and so on until the rth place which can be filled in $n-r+1$ ways. We have now, number of ways = $n(n-1)(n-2)....(n-r+1)$. In factorial notation, this can be expressed as $\frac{n!}{(n-r)!}$. This is the formula for number of permutations of n objects taken r at a time, and is denoted as $^nP_r$ or $_nP_r$. Note, that here we did place objects in different spaces available right from the first place, that is, it is ordered arrangement. When order is immaterial, it is referred to as combination which is denoted as $^nC_r$ or $_nC_r$ and can be given as $^nC_r$ = $\frac{n!}{(n-r)! r!}$. \newline The following examples will help in understanding the difference between a permutation and a combination.\newline
-\textbf{Example 6:} In how many ways can we select 3 objects out of 7 different objects?
+\textcolor{blue}{\textbf{Example 6:} In how many ways can we select 3 objects out of 7 different objects?}
 
 \textbf{Solution} Here, we have to select objects, order is immaterial, so we use the formula for combination of n different objects taken r at a time which gives, $^7C_3$ = 35.\newline
-\textbf{Example 7:} Find number of arrangements of 7 different objects taken 3 at a time.
+\textcolor{blue}{\textbf{Example 7:} Find number of arrangements of 7 different objects taken 3 at a time.}
 
 \textbf{Solution} Suppose we choose, the different objects A,B,C. Then in terms of arrangements, ABC and ACB are two different arrangements. Here, it is an ordered arrangement. We use the formula for permutation of n different objects taken r at a time which gives, $^7P_3$ = $^7C_3.(3!)$ = 210.\newline
-\textbf{Example 8:} How many triangles can be made by joining vertices of a hexagon?
+\textcolor{blue}{\textbf{Example 8:} How many triangles can be made by joining vertices of a hexagon?}
 
 \textbf{Solution} For a triangle, we need to choose three vertices out of the six vertices of the hexagon. Hence number of triangles = $^6C_3$ \newline
-\textbf{Example 9:} A committee of 6 members is to be made from 5 women and 5 men such that exactly 3 men and 3 women are selected. Find the number of such committees that can be formed.
+textcolor{blue}{\textbf{Example 9:} A committee of 6 members is to be made from 5 women and 5 men such that exactly 3 men and 3 women are selected. Find the number of such committees that can be formed.}
 
 \textbf{Solution} We can select 3 men out of 5 in $^5C_3$ ways and similarly $^5C_3$ ways for selecting 3 out of 5 women. Since selection of men and women are independent, total number of teams that can be made is $^{5}C_{3} \times ^{5}C_{3} = 100$.
 \section{Circular Permutations}
@@ -97,7 +97,7 @@ The total number of circular permutations of n-objects is $(n-1)!$.
 \textbf{Example 10:} Find the total number of ways in which 7 children can be seated in a round table for community lunch.
 
 \textbf{Solution} Total number of ways will be = (7-1)! = 6!\newline
-\textbf{Example 11:} A person is to make a garland with 6 different flowers. Find the total number of possible arrangements of flowers in garland.
+\textcolor{blue}{\textbf{Example 11:} A person is to make a garland with 6 different flowers. Find the total number of possible arrangements of flowers in garland.}
 
 \textbf{Solution} Here, the sense of clockwise and anticlockwise makes no difference, as the garland can be turned around. Hence the total number of possible arrangements = $\frac{(6-1)!}{2}$ = $\frac{5!}{2}$
 \section{Tie and Gap Method}
@@ -105,13 +105,13 @@ The total number of circular permutations of n-objects is $(n-1)!$.
 \textbf{Tie method:} If r objects out of n objects should always be together in different arrangements, then total number of permutations in such case is $(n-r+1)!(r!)$
 \end{tcolorbox}
 Let us understand this using the following example:\newline
-\textbf{Example 12:} Find the total number of ways of forming a queue of 11 students of a class where 4 students always stand consecutively.
+\textcolor{blue}{\textbf{Example 12:} Find the total number of ways of forming a queue of 11 students of a class where 4 students always stand consecutively.}
 
 \textbf{Solution} Since 4 students have to be together, we first consider them as 1 unit (tie them) permute this unit with rest of the students and then finally permute the 4 students among themselves which gives the answer $8! \times 4!$.
 \begin{tcolorbox}[colback=TealBlue!10!White,colframe=TealBlue!50!black]
 \textbf{Gap method:} If no two of some objects should be placed together (in permutation) then excluding them, permute rest and in created gaps, permute those objects.
 \end{tcolorbox}
-\textbf{Example 13:} Find the total number of ways for 8 people to stand in a row, of which two particular persons $A$ and $B$ do not stand together.
+\textcolor{blue}{\textbf{Example 13:} Find the total number of ways for 8 people to stand in a row, of which two particular persons $A$ and $B$ do not stand together.}
 
 \textbf{Solution} First, we permute the rest 6 people and in the created 7 gaps (starting from the left of first person to the right of last person), we choose any two gaps where we can place $A$ and $B$ and we also keep in mind, that $A$ and $B$ can permute among themselves. Hence the answer becomes $6! \times {^7C_2}\times 2!$
 \section{Permutation of alike objects(all at a time)}
