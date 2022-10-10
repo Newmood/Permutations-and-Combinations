@@ -26,7 +26,7 @@
 
 \section{Introduction}
 \subsection{Fundamental Principle of Counting}
-\begin{tcolorbox}[colback=TealBlue!10!White,colframe=TealBlue!50!black]
+\begin{tcolorbox}[colback=ProcessBlue!10!White,colframe=Blue!60!White]
 \textbf{Addition Rule:} If an event can occur through a process m ways or with another process in n ways, then the total number of ways with which the event can occur is m+n. The processes here must be mutually exclusive.\newline
 \textbf{Multiplication Rule:} If an event can occur in m ways, and another event can occur in n ways, then total number of ways in which both event can occur simultaneously is m×n. Ensure while using this rule, that the events are independent.
 \end{tcolorbox}
@@ -80,7 +80,7 @@ Let us say, we have n objects but only r places and each place can accommodate o
 \textcolor{blue}{\textbf{Example 8:} How many triangles can be made by joining vertices of a hexagon?}
 
 \textbf{Solution} For a triangle, we need to choose three vertices out of the six vertices of the hexagon. Hence number of triangles = $^6C_3$ \newline
-textcolor{blue}{\textbf{Example 9:} A committee of 6 members is to be made from 5 women and 5 men such that exactly 3 men and 3 women are selected. Find the number of such committees that can be formed.}
+\textcolor{blue}{\textbf{Example 9:} A committee of 6 members is to be made from 5 women and 5 men such that exactly 3 men and 3 women are selected. Find the number of such committees that can be formed.}
 
 \textbf{Solution} We can select 3 men out of 5 in $^5C_3$ ways and similarly $^5C_3$ ways for selecting 3 out of 5 women. Since selection of men and women are independent, total number of teams that can be made is $^{5}C_{3} \times ^{5}C_{3} = 100$.
 \section{Circular Permutations}
@@ -94,7 +94,7 @@ Now we think of $N$ such objects to be placed in $N$ place where each place acco
 \begin{tcolorbox}[colback=TealBlue!10!White,colframe=TealBlue!50!black]
 The total number of circular permutations of n-objects is $(n-1)!$.
 \end{tcolorbox}
-\textbf{Example 10:} Find the total number of ways in which 7 children can be seated in a round table for community lunch.
+\textcolor{blue}{\textbf{Example 10:} Find the total number of ways in which 7 children can be seated in a round table for community lunch.}
 
 \textbf{Solution} Total number of ways will be = (7-1)! = 6!\newline
 \textcolor{blue}{\textbf{Example 11:} A person is to make a garland with 6 different flowers. Find the total number of possible arrangements of flowers in garland.}
@@ -121,13 +121,13 @@ Let out of n objects, $n_1$ are alike objects of one kind, $n_2$ are alike objec
 To understand this formula, let us take the example of arranging the letters of the word $PERMUTATION$. Here the two $T$'s are identical. Rest all letters are different. Now, suppose we are to permute the letters of this word. How many such permutations are possible?
 
 Suppose we name the two $T$'s as $T_1$ and $T_2$ which gives $11!$ permutations of the word. Now, consider two words from these permutations, say, $PERUMT_{1}AT_{2}ION$ and $PERUMT_{2}AT_{1}ION$. Had the $T$'s not been numbered, a person would have read $PERUMTATION$ in both the cases and will not identify the two cases as different arrangements. So the total number of permuations will become $\frac{11!}{2!}$.\newline
-\textbf{Example 14:} Find the number of ways of arranging the letters of the word $HANNAH$.
+\textcolor{blue}{\textbf{Example 14:} Find the number of ways of arranging the letters of the word $HANNAH$.}
 
 \textbf{Solution} Here we see, that we are given with 2 $H$'s, 2 $N$'s and 2 $A$'s. Now consider the two $H$'s being $H_1$ and $H_2$, the two $N$'s being $N_1$ and $N_2$ and the two $A$'s being $A_1$ and $A_2$. Now consider a permutation of this word, say, $N_{1}A_{1}H_{1}H_{2}A_{2}N_{2}$. Interchanging any of the repeated letters gives a new permutation but in original question the letters are not numbered, which means that interchanging the identical letters gives no new permutation.\newline
-\textbf{Example 15:} Find the total number of possible arrangements of the letters of the word $MISSISSIPPI$ such that now two $I$ are together.
+\textcolor{blue}{\textbf{Example 15:} Find the total number of possible arrangements of the letters of the word $MISSISSIPPI$ such that now two $I$ are together.}
 
 \textbf{Solution} Here, first we separate out 4 $I$'s and permute the remaining seven letters which can be done in $\frac{7!}{4!2!}$. The $4!2!$ in the denominator is due to the repeated letters $S$ and $P$. Now out of the 8 created gaps we select 4 gaps in $^8C_4$ ways. Hence the answer becomes $\frac{7!}{4!2!}{^8C_4}$. \newline
-\textbf{Example 16:} Find the total number of possible arrangements of the letters of the word $MISSISSIPPI$ such that all $S$'s are not present together.
+\textcolor{blue}{\textbf{Example 16:} Find the total number of possible arrangements of the letters of the word $MISSISSIPPI$ such that all $S$'s are not present together.}
 
 \textbf{Solution} We are asked to find the arrangements where all the $S$ are not present together, which means that atmost three $S$ can be present together. There are two methods to do this problem. First one, where we can make cases representing no two $S$ together, only two $S$ together and three $S$ together and then add them. The second and the easier way will be to use bijection rule. We will first calculated the number of all possible arrangements of the letters of the word $MISSIPPI$ without any restriction and then we will subtract the number of cases where all the $S$ are together.
 \begin{center}
