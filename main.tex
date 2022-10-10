@@ -87,9 +87,8 @@ Let us say, we have n objects but only r places and each place can accommodate o
 Till now, we have discussed about linear permutations. Now, we talk about arrangements in circular manner. Consider three persons- A, B and C. In linear permutations the arrangement $ABC$ and $CAB$ are two different arrangements, while in circular permutation, both are same. In figure 1, we place both $ABC$ and $CAB$ in circular manner. Now, in the left diagram, looking from $A$'s perspective, the person on its right is $C$ and on the left is $B$. Now again in the right diagram, the position of $B$ and $C$ did not change with respect to $A$. This can be observed that the diagram in the right is obtained by rotating the one in the left. In circular permutations, arrangements produced by such rotations are considered identical.
 \begin{figure}
     \centering
-    \includegraphics[width=7cm]{PnCcircularpermu.jpg}
+    \includegraphics[width=7cm]{images/PnCcircularpermu}
     \caption{The left one shows ABC(clockwise), right one shows CAB(clockwise)}
-    \label{fig:my_label}
 \end{figure} 
 Now we think of $N$ such objects to be placed in $N$ place where each place accommodates only one object (circular permutation). Let us now call them object $A_{1}$, $A_{2}$, $A_3$ ...$A_n$. Once we fix any of these, say $A_1$ in the next position (in clockwise direction) $n-1$ objects can be placed, followed by $n-2$ objects for the next place and so on until there is just one last position remaining completing the circle. From the above discussion we get that total number of such permutations will be $(n-1)(n-2)(n-3)(n-4)$...$1$ = $(n-1)!$ 
 \begin{tcolorbox}[colback=TealBlue!10!White,colframe=TealBlue!50!black]
